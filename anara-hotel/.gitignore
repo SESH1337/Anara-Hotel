@@ -23,9 +23,10 @@ yarn-debug.log*
 yarn-error.log*
 
 
-/../*.jpg
-/../*.png
-/../*.txt
-/../*.webp
-/../*.jfif
-/../Desktop*
+# Ignore images and other unnecessary files
+*.jpg
+*.png
+*.txt
+*.pdf
+/node_modules/
+/build/
