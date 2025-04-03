@@ -7,7 +7,9 @@ const Hero: React.FC = () => {
         <source src="../hotel-video2.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
-        <h1 className="text-white text-4xl font-bold">Welcome to Our Hotel</h1>
+        <h1 className="text-white text-5xl font-bold font-crimsonBold mt-[80px] animate-fade-up-deep">
+          Welcome to Our Hotel
+        </h1>
       </div>
     </div>
   )
