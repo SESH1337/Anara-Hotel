@@ -6,9 +6,11 @@ export default function Header() {
   return (
     <div className="absolute z-[1000] flex flex-col items-center justify-center w-full mt-[50px]">
       <div className="center flex items-center justify-center w-full relative px-8">
-        <h1 className="text-[40px] font-boldonse text-transparent bg-clip-text animate-rainbow">
-          ANARA
-        </h1>
+        <Link to={'/'}>
+          <h1 className="text-[40px] font-boldonse text-transparent bg-clip-text animate-rainbow">
+            ANARA
+          </h1>
+        </Link>
 
         <div className="absolute right-8 flex items-center space-x-2">
           <a

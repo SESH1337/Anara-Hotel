@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default function rooms() {
-  return <div>rooms</div>
+export default function Rooms() {
+  return <div className="bg-blue-300 font-bolder p-4 text-red">ROOMS</div>
 }
