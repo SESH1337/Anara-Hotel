@@ -9,6 +9,12 @@ module.exports = {
         grayCustom: '#353535',
         rootRed: '#574f4f',
         yellowSplash: '#ededce',
+        customGray: '#7C7477',
+        customGrayBg: '#646464',
+        beigeBackground: '#F2F1E6',
+        translucentBeige: 'rgba(255, 248, 236, 0.59)',
+        mediumGray: '#7D7D7D',
+        softGray: '#737373',
       },
       fontFamily: {
         boldonse: ['Boldonse', 'sans-serif'],

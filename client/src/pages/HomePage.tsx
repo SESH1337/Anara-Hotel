@@ -1,6 +1,7 @@
 import React from 'react'
 import ChildrenSelector from '../components/CheckRate/ChildrenSelector'
 import Services from '../components/Services/Services'
+import Rooms from '../components/Rooms/Rooms'
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <div className="relative z-10">
         <ChildrenSelector />
         <Services />
+        <Rooms />
       </div>
     </div>
   )

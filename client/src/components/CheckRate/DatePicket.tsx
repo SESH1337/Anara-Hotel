@@ -15,6 +15,9 @@ const DateSelector: React.FC = () => {
   const [startDate, setStartDate] = useState<Date | null>(today)
   const [endDate, setEndDate] = useState<Date | null>(null)
 
+  {
+    console.log(startDate)
+  }
   return (
     <div className="flex flex-col gap-4 font-crimsonBold">
       <h2 className="text-lg font-bold font-ptSerif">
@@ -43,7 +46,7 @@ const DateSelector: React.FC = () => {
               minDate={today}
               placeholderText="Select start date"
               dateFormat="dd MMM yyyy"
-              className="pl-10 pr-4 py-2 border rounded w-full focus:outline-none"
+              className="pl-10 pr-4 pt-[0.7rem] pb-2 border rounded w-full focus:outline-none"
             />
             <CalendarIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-red-400 fill-current z-[1000]" />
           </div>
@@ -54,7 +57,7 @@ const DateSelector: React.FC = () => {
           <label className="font-medium mb-1 block font-crimsonBold">
             End Date
           </label>
-          <div className="relative">
+          <div className="relative sm:d-block">
             <DatePicker
               selected={endDate}
               onChange={(date: Date | null) => setEndDate(date)}
@@ -64,7 +67,7 @@ const DateSelector: React.FC = () => {
               minDate={startDate || today}
               placeholderText="Select end date"
               dateFormat="dd MMM yyyy"
-              className="pl-10 pr-4 py-2 border rounded w-full focus:outline-none"
+              className="pl-10 pr-4 pt-[0.7rem] pb-2 border rounded w-full focus:outline-none"
             />
             <CalendarIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-red-400 fill-current z-[1000]" />
           </div>

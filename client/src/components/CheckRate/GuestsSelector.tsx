@@ -25,7 +25,7 @@ const GuestsSelector: React.FC = () => {
     <div className="self-end ml-[15px] w-50 font-crimsonBold" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full border px-4 py-2 rounded text-left bg-white"
+        className="w-full border px-4 pt-[0.7rem] pb-2 rounded text-left bg-white"
       >
         Guests: {guestCount}
       </button>

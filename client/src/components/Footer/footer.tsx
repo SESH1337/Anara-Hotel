@@ -9,6 +9,7 @@ type Room = {
   bed: string
   size: number | string
   price: string
+  image: string
 }
 
 export default function RoomsList() {
@@ -27,31 +28,8 @@ export default function RoomsList() {
   }, [])
 
   return (
-    <div>
-      <h1>Rooms List</h1>
-      {rooms.length === 0 ? (
-        <p>No rooms found</p>
-      ) : (
-        rooms.map((room) => (
-          <div
-            key={room._id}
-            style={{
-              border: '1px solid #ccc',
-              marginBottom: '10px',
-              padding: '10px',
-            }}
-          >
-            <h2>
-              {room.name} ({room.type})
-            </h2>
-            <p>{room.description}</p>
-            <p>Capacity: {room.capacity}</p>
-            <p>Bed type: {room.bed}</p>
-            <p>Size: {room.size} m²</p>
-            <p>Price: {room.price}</p>
-          </div>
-        ))
-      )}
+    <div className="bg-black font-ptSerif flex justify-center p-4 text-custom-beige">
+      <h3>Copyright © Anara Hotel</h3>
     </div>
   )
 }

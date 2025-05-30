@@ -3,7 +3,7 @@ import Layout from '../components/Layout/Layout'
 import AboutPage from '../pages/AboutPage'
 import HomePage from '../pages/HomePage'
 import GalleryPage from '../pages/GalleryPage'
-import RoomsPage from '../pages/RoomsPage'
+import RoomsPage from '../pages/RoomPage'
 import ContactPage from '../pages/ContactPage'
 import ServicesPage from '../pages/ServicesPage'
 
