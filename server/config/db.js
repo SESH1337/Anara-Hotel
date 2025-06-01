@@ -1,16 +1,11 @@
-const { MongoClient } = require('mongodb')
-const dotenv = require('dotenv')
+const path = require('path')
+const dotenv = require('dotenv') // ეს უნდა ეწეროს სანამ გამოიყენებ
+dotenv.config({ path: path.resolve(__dirname, '../.env') })
 
-dotenv.config()
+const { MongoClient } = require('mongodb')
 
 const uri = process.env.MONGO_URI
-
-const client = new MongoClient(uri, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  tls: true,
-  tlsAllowInvalidCertificates: false, // ან true თუ ისევ გაწუხებს TLS
-})
+const client = new MongoClient(uri)
 
 let dbInstance = null
 
