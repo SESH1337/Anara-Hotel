@@ -10,9 +10,7 @@ export default function Header() {
   return (
     <div
       className={`${
-        isHomePage
-          ? 'absolute z-[1000] bg-transparent'
-          : 'relative bg-custom-beige'
+        isHomePage ? 'absolute z-[1000] bg-transparent' : 'relative bg-black'
       } flex flex-col items-center justify-center w-full p-[50px]`}
     >
       <div className="center flex items-center justify-center w-full relative px-0 md:px-8">

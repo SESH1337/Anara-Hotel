@@ -2,10 +2,11 @@ import { createBrowserRouter } from 'react-router-dom'
 import Layout from '../components/Layout/Layout'
 import AboutPage from '../pages/AboutPage'
 import HomePage from '../pages/HomePage'
-import GalleryPage from '../pages/GalleryPage'
+
 import RoomsPage from '../pages/RoomPage'
 import ContactPage from '../pages/ContactPage'
 import ServicesPage from '../pages/ServicesPage'
+import RoomDetailsPage from '../pages/RoomDetailsPage'
 
 export const router = createBrowserRouter([
   {
@@ -24,14 +25,7 @@ export const router = createBrowserRouter([
       </Layout>
     ),
   },
-  {
-    path: '/gallery',
-    element: (
-      <Layout>
-        <GalleryPage />
-      </Layout>
-    ),
-  },
+
   {
     path: '/rooms',
     element: (
@@ -53,6 +47,14 @@ export const router = createBrowserRouter([
     element: (
       <Layout>
         <ContactPage />
+      </Layout>
+    ),
+  },
+  {
+    path: '/rooms/:slug',
+    element: (
+      <Layout>
+        <RoomDetailsPage />
       </Layout>
     ),
   },
