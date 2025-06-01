@@ -23,7 +23,7 @@ export default function RoomPage() {
 
   useEffect(() => {
     const roomsData = async () => {
-      const res = await axios.get('http://localhost:5000/api/rooms')
+      const res = await axios.get('https://anara-hotel.onrender.com/api/rooms')
       setRooms(res.data)
     }
     roomsData()

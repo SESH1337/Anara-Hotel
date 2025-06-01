@@ -20,7 +20,7 @@ export default function RoomDetailsPage() {
 
   useEffect(() => {
     const fetchRoom = async () => {
-      const res = await axios.get(`http://localhost:5000/api/rooms`)
+      const res = await axios.get(`https://anara-hotel.onrender.com/api/rooms`)
       const allRooms = res.data as Room[]
       const foundRoom = allRooms.find((r) => toSlug(r.name) === slug)
       setRoom(foundRoom || null)

@@ -16,7 +16,7 @@ export default function RoomsList() {
   const [rooms, setRooms] = useState<Room[]>([])
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/rooms')
+    fetch('https://anara-hotel.onrender.com/api/rooms')
       .then((res) => {
         if (!res.ok) {
           throw new Error('Network response was not ok')
