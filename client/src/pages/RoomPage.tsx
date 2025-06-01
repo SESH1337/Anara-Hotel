@@ -42,7 +42,6 @@ export default function RoomPage() {
             key={index}
             className="max-w-[450px] bg-white border border-black flex flex-col h-full"
           >
-            {/* სურათი + hover effect */}
             <div className="relative group h-[300px] w-full overflow-hidden">
               <img
                 className="h-full w-full object-cover group-hover:blur-sm transition duration-300"
