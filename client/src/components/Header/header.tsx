@@ -28,7 +28,7 @@ export default function Header() {
           >
             <img
               className="w-[30px] h-[30px]"
-              src="../icons/instagram.png"
+              src="/icons/instagram.png"
               alt="instagram_icon"
             />
           </a>
@@ -39,7 +39,7 @@ export default function Header() {
           >
             <img
               className="w-[30px] h-[30px]"
-              src="../icons/facebook.png"
+              src="/icons/facebook.png"
               alt="facebook_icon"
             />
           </a>
@@ -51,7 +51,7 @@ export default function Header() {
           >
             <img
               className="w-[30px] h-[30px]"
-              src="../icons/twitter.png"
+              src="/icons/twitter.png"
               alt="twitter_png"
             />
           </a>
