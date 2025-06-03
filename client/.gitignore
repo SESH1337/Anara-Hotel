@@ -30,3 +30,7 @@ yarn-error.log*
 *.pdf
 /node_modules/
 /build/
+
+# Exceptions: allow images in public folder
+!public/images/*.jpg
+!public/icons/*.png
