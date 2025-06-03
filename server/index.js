@@ -4,6 +4,7 @@ const connectDB = require('./config/db')
 const userRoutes = require('./routes/users')
 const roomsRoutes = require('./routes/rooms')
 const cors = require('cors')
+const path = require('path')
 
 dotenv.config()
 
@@ -31,3 +32,11 @@ connectDB()
   .catch((err) => {
     console.error('DB connection failed:', err)
   })
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'client', 'build')))
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  })
+}
