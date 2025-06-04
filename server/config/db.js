@@ -1,5 +1,5 @@
 const path = require('path')
-const dotenv = require('dotenv') // ეს უნდა ეწეროს სანამ გამოიყენებ
+const dotenv = require('dotenv')
 dotenv.config({ path: path.resolve(__dirname, '../.env') })
 
 const { MongoClient } = require('mongodb')
@@ -15,7 +15,7 @@ async function connectDB() {
   try {
     await client.connect()
     console.log('✅ MongoDB Atlas Connected')
-    dbInstance = client.db('anara-hotel')
+    dbInstance = client.db('anara_hotel')
     return dbInstance
   } catch (error) {
     console.error('❌ MongoDB connection error:', error)

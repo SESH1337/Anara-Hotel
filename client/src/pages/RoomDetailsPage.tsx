@@ -18,12 +18,10 @@ export default function RoomDetailsPage() {
   const { slug } = useParams()
   const [room, setRoom] = useState<Room | null>(null)
 
-  console.log('slug:', slug)
   useEffect(() => {
     const fetchRoom = async () => {
       const res = await axios.get('https://anara-hotel.onrender.com/api/rooms')
 
-      //g
       const allRooms = res.data as Room[]
       const foundRoom = allRooms.find((r) => toSlug(r.name) === slug)
       setRoom(foundRoom || null)
