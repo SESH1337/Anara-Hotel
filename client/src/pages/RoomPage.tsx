@@ -69,7 +69,7 @@ export default function RoomPage() {
                 <div className="flex items-center space-x-4 py-4 font-ptSerif">
                   <img
                     className="w-6 h-6 text-black"
-                    src="../person.png"
+                    src="../icons/person.png"
                     alt="person"
                   />
                   <h3 className="text-sm">
