@@ -15,9 +15,6 @@ const DateSelector: React.FC = () => {
   const [startDate, setStartDate] = useState<Date | null>(today)
   const [endDate, setEndDate] = useState<Date | null>(null)
 
-  {
-    console.log(startDate)
-  }
   return (
     <div className="flex flex-col gap-4 font-crimsonBold">
       <h2 className="text-lg font-bold font-ptSerif">
